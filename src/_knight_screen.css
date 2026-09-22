@@ -1,0 +1,50 @@
+/* ===== 騎士端專屬 CSS ===== */
+/* 取名/配對畫面共用 pairing 樣式（已在 screen.css）。補取名輸入 */
+#naming{display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:100vh;min-height:100dvh;padding:30px;text-align:center;}
+#naming .pk{font-size:12px;letter-spacing:.3em;color:var(--goldHi);margin-bottom:12px;}
+#naming h2{font-size:26px;color:#fff;font-weight:400;margin-bottom:10px;}
+#naming p{font-size:14px;line-height:1.9;color:var(--textDim);margin-bottom:24px;max-width:320px;}
+#naming input{text-align:center;font-size:20px;}
+
+/* 接懸賞 / 回報 按鈕 */
+.acceptbtn{padding:8px 16px;border-radius:10px;border:none;cursor:pointer;font-family:inherit;font-size:13px;font-weight:700;color:#fff;background:linear-gradient(135deg,var(--astral),var(--astralHi));box-shadow:0 0 14px rgba(77,166,255,.4);flex-shrink:0;}
+.reportbtn{padding:8px 16px;border-radius:10px;border:none;cursor:pointer;font-family:inherit;font-size:13px;font-weight:700;color:var(--void);background:linear-gradient(135deg,var(--goldHi),var(--gold));box-shadow:0 0 14px rgba(240,192,74,.5);flex-shrink:0;animation:pulse 1.8s ease-in-out infinite;}
+.waitbox{width:30px;height:30px;border-radius:9px;display:grid;place-items:center;color:var(--gold);border:1px solid var(--line);}
+.waitbox .ic{width:16px;height:16px;}
+
+/* 手札清單格 */
+.listgrid{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
+.listcard{background:var(--cardbg);border:1px solid var(--line);border-radius:16px;padding:18px 14px;display:flex;flex-direction:column;align-items:center;cursor:pointer;transition:transform .15s;}
+.listcard:active{transform:scale(.97);}
+.listicon{width:48px;height:48px;border-radius:14px;background:rgba(123,92,255,.16);display:grid;place-items:center;color:var(--arcaneHi);margin-bottom:10px;}
+.listicon .ic{width:26px;height:26px;}
+.listname{font-size:15px;color:#fff;}
+.listcount{font-size:11.5px;color:var(--textDim);margin-top:3px;}
+
+/* 清單詳情 */
+.listdetailhead{display:flex;align-items:center;gap:12px;margin-bottom:14px;}
+.backbtn{width:38px;height:38px;border-radius:12px;background:rgba(26,26,62,.7);border:1px solid var(--line);color:var(--text);display:grid;place-items:center;cursor:pointer;flex-shrink:0;}
+.backbtn .ic{width:20px;height:20px;}
+.ldh-title{font-size:18px;color:#fff;display:flex;align-items:center;gap:8px;}
+.ldh-title .ic{width:22px;height:22px;color:var(--arcaneHi);}
+.addtaskbtn{width:100%;margin-top:8px;padding:14px 0;border-radius:14px;border:1.5px dashed var(--line);background:rgba(123,92,255,.08);color:var(--arcaneHi);font-family:inherit;font-size:14px;font-weight:700;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:6px;}
+.addtaskbtn .ic{width:18px;height:18px;}
+
+/* 圖示選擇 */
+.iconpickrow{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:8px;}
+.iconpick{width:46px;height:46px;border-radius:12px;border:1.5px solid var(--line);background:rgba(0,0,0,.2);color:var(--textDim);cursor:pointer;display:grid;place-items:center;}
+.iconpick.on{border:2px solid var(--arcaneHi);background:rgba(123,92,255,.18);color:var(--arcaneHi);}
+.iconpick .ic{width:22px;height:22px;}
+
+/* 角色出場（每完成10個任務）*/
+.roleappear{position:fixed;inset:0;z-index:88;display:flex;align-items:center;justify-content:center;pointer-events:auto;cursor:pointer;}
+.roleappear .ra-bg{position:absolute;inset:0;background:radial-gradient(circle at 50% 50%,rgba(123,92,255,.35),rgba(10,10,31,.88));backdrop-filter:blur(3px);animation:flash .5s ease;}
+.roleappear .ra-card{position:relative;z-index:2;display:flex;flex-direction:column;align-items:center;padding:0 30px;animation:raIn .6s cubic-bezier(.2,.8,.2,1);}
+@keyframes raIn{from{opacity:0;transform:translateY(30px) scale(.92)}to{opacity:1;transform:none}}
+.roleappear .ra-img{height:54vh;max-height:480px;object-fit:contain;filter:drop-shadow(0 12px 40px rgba(123,92,255,.6));}
+.roleappear .ra-info{margin-top:-10px;text-align:center;background:rgba(18,18,46,.9);border:1.5px solid var(--gold);border-radius:18px;padding:14px 22px;max-width:340px;box-shadow:0 10px 40px rgba(240,192,74,.3);}
+.roleappear .ra-name{font-size:15px;color:var(--goldHi);font-weight:700;margin-bottom:6px;letter-spacing:.05em;}
+.roleappear .ra-line{font-size:15px;color:var(--text);line-height:1.7;}
+
+/* 角色詳情引言 */
+.rolefull .rquote{font-size:14px;color:var(--goldHi);font-style:italic;margin-top:12px;}
