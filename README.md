@@ -1,9 +1,4 @@
-# My Princess's Knight — 專案交接文件
-
-> 給 Claude Code / 新對話接手用。請先完整讀這份檔案，再開始開發。
-
-## 這是什麼專案
-
+# My Princess's Knight 
 一個**異世界 RPG 風格的雙人待辦 App**，使用者（女方）為男友打造。
 
 - **公主端**（女方用，`dist/princess-app.html`）：女方是公主 Elia，發懸賞任務、審核、給獎勵。是「管理端」，角色/夥伴全解鎖、金幣 2000 方便預覽。
