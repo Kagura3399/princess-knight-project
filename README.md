@@ -267,7 +267,7 @@ Calendar
 
 ---
 
-## 這個 App 的特色
+## 這個App的特色
 
 Princess Knight Project 並不是單純把 To-Do List 換成 RPG 的外觀。
 
@@ -333,7 +333,8 @@ Princess Knight Project 是我自己構想並獨立開發的個人專案。
 
 可以直接透過瀏覽器操作 Princess Knight Project：
 
-**[Princess Knight Project 線上體驗](你的 GitHub Pages 網址)**
+公主端:https://claude.ai/artifact/AfytVAVXCbKQhRqdit6A7m
+騎士端:https://claude.ai/artifact/69yxbLNiEJQUJn41AHwdeX
 
 完整程式碼：
 
@@ -345,7 +346,7 @@ Princess Knight Project 是我自己構想並獨立開發的個人專案。
 
 目前主要功能都已經完成。
 
-後續會依照實際使用的情況，持續調整介面、操作方式以及 RPG 內容，並改善整體使用體驗與穩定度。
+後續會依照實際使用的情況，持續調整介面、操作方式以及RPG內容，並改善整體使用體驗與穩定度。
 
 ---
 
